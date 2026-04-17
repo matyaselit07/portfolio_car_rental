@@ -1,0 +1,11 @@
+2026.04.15
+
+- Szolgáltatások:                       DONE
+        nem kell előre fizetni, 
+        teljes biztosítás, 
+        24 órás támogatás, 
+        ingyenes lemondás
+
+- a carousel-nél a nyilak lecserélése (probléma a színekkel) DONE
+
+- ÖTLET: péter féle átmenet ???         DONE
