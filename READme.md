@@ -1,4 +1,4 @@
-## Documnetation
+## Documentation
 
 # Colors used from coolors.co:
 
