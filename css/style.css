@@ -61,9 +61,6 @@ li {
 
 
 header {
-   background-image: linear-gradient(rgba(28, 49, 52, 1), rgba(28, 49, 52, .8));
-   width: 100%;
-   min-height: 100px;
    position: sticky;
    top: 0;
    z-index: 1;
@@ -73,16 +70,23 @@ header {
    position: absolute;
    width: 330px;
    cursor: pointer;
+   z-index: 2;
 }
 
 .navbar-list {
    display: flex;
    justify-content: flex-end;
    list-style: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background-color: var(--color-primary);
+   visibility: visible;
 }
 
 .navbar-list li {
-   padding: 1rem 1.5rem 1.5rem 0;
+   padding: 2rem;
    /* margin-top: .5rem; */
 }
 
@@ -195,7 +199,7 @@ main .films::-webkit-scrollbar {
 
 .backward,
 .forward {
-   z-index: 1;
+   z-index: 0;
    position: absolute;
    height: 5vw;
    min-height: 30px;
@@ -396,6 +400,11 @@ footer {
 @media (max-width: 768px)  
 { 
    /* táblagépek álló */
+
+   h2 {
+      text-align: center;
+   }
+
    .navbar-list {
       visibility: hidden;
       flex-direction: column;
@@ -418,6 +427,10 @@ footer {
 
    .logo {
      visibility: collapse;
+   }
+
+   .service-img {
+      width: 280px;
    }
 }
 
