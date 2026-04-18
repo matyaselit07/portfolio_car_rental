@@ -3,7 +3,7 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
+      <title>Car Rental</title>
       <link rel="stylesheet" href="./css/style.css">
    </head>
 
@@ -18,7 +18,7 @@
          </label>
          <ul class="navbar-list">
             <li><a href="#fooldal" class="navbar-list__data">FŐOLDAL</a></li>
-            <li><a href="#rolunk" class="navbar-list__data">RÓLUNK</a></li>
+            <li><a href="#fooldal" class="navbar-list__data">RÓLUNK</a></li>
             <li><a href="#galery" class="navbar-list__data">GALÉRIA</a></li>
             <li><a href="#kapcsolat" class="navbar-list__data">KAPCSOLAT</a></li>
          </ul>
@@ -26,15 +26,10 @@
 
       <!-- Main -->
       <main>
-         <section class="title-section" id="fooldal">
-            <div class="title-div">
-               <h1 id="rolunk">Redline Rental</h1>
-            </div>
-         </section>
-
+         <h1 id="fooldal">Redline Rental</h1>
          <!-- Rólunk -->
-         <section class="about-us">
-            <div class="about-us__div">
+         <section>
+            <div class="about-us">
                <img class="main-img" src="./assets/images/car_image-09.jpg" alt="car_jpg" loading="lazy">
                <p>Szeretnél kikapcsolódni, és közben az autók szerelmese is vagy? Vágysz arra, hogy valami IGAZÁN különlegeset vezess? Akkor jó helyen jársz. Válogass sportkocsi és luxus sportkocsi kínálatunkból, és éld át az igazi vezetési élményt.</p>
             </div>
@@ -64,7 +59,7 @@
          </section>
 
          <!-- Galéria -->
-         <section class="gallery-section">
+         <section>
             <h2 id="galery">Galéria</h2>
             <div class="gallery">
                <div class="films">
@@ -111,6 +106,7 @@
                name="e-mail"
                id="eamil-id"
                placeholder="E-mail..."
+               pattern=".*@.*"
                required>
             </section>
             <section>
@@ -138,9 +134,16 @@
          <h3>matyaselit07@gmail.hu</h3>
          <h3>Copyright2026@MatyasElit07</h3>
       </footer>
-      <!-- Lightbox model -->
+      <!-- Lightbox -->
       <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Nagyított kép">
          <button class="lightbox__close" aria-label="Bezárás">X</button>
+
+         <!-- BAL NYÍL -->
+         <button class="lightbox__arrow lightbox__arrow--left" aria-label="Előző">&lt</button>
+
+         <!-- JOBB NYÍL -->
+         <button class="lightbox__arrow lightbox__arrow--right" aria-label="Következő">&gt</button>
+
          <img class="lightbox__img" alt="">
       </div>
       <script src="/js/scripts.js"></script>
