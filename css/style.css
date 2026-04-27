@@ -15,6 +15,11 @@
 }
 
 
+html {
+   scroll-behavior: smooth;
+}
+
+
 /* --- Stíluselemek --- */
 
 body {
@@ -77,14 +82,14 @@ header {
    padding: 2rem;
 }
 
-.navbar-list__data {
+.navbar-list-data {
    color: var(--color-secondary-light);
    text-decoration: none;
    font-size: 1.2rem;
 }
 
-.navbar-list__data:hover {
-   color: var(--color-primary);
+.navbar-list-data:hover {
+   color: var(--color-primary-light);
    text-shadow: 1px 1px 15px var(--color-secondary-dark);
    scale: 1.2;
    transition: .5s;
@@ -385,6 +390,11 @@ footer {
 @media (max-width: 480px)  
 { 
    /* kis mobilok felett */
+   .navbar-list li {
+   padding: 1rem;
+   }
+
+   
    .about-us p {
       text-align: left;
    }
